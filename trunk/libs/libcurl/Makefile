@@ -1,11 +1,11 @@
 include $(ROOTDIR)/rules.mk
 
 PKG_NAME:=curl
-PKG_VERSION:=8.11.1
+PKG_VERSION:=8.12.1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.xz
 PKG_SOURCE_URL:=https://github.com/curl/curl/releases/download/curl-$(subst .,_,$(PKG_VERSION))/
-PKG_HASH:=c7ca7db48b0909743eaef34250da02c19bc61d4f1dcedd6603f109409536ab56
+PKG_HASH:=0341f1ed97a26c811abaebd37d62b833956792b7607ea3f15d001613c76de202
 
 include $(INCLUDE_DIR)/package.mk
 
