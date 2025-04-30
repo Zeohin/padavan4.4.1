@@ -20,7 +20,7 @@ This project is based on original rt-n56u with latest mtk 4.4.198 kernel, which 
 - Added ccache support, may save up to 50%+ build time
 - Upgraded the toolchain and libc:
   - gcc 13.3.0
-  - musl 1.2.5 / uClibc-ng 1.0.51
+  - musl 1.2.5 / uClibc-ng 1.0.52
  - OpenWrt style package Makefile
  - Enabled kernel cgroups support
  - Fixed K2P led label names
@@ -52,7 +52,7 @@ This project is based on original rt-n56u with latest mtk 4.4.198 kernel, which 
 - DIR-882
 - EA7500 (from https://github.com/MNM28/padavan-4.4, 没有机器测试，自行判断)
 - G-AX1800 (from https://github.com/ddyjyj/padavan-4.4, 富春江G-AX1800, 自测可用)
-- G-AX1800-B (from https://github.com/vb1980/padavan-4.4, 富春江G-AX1800黑色版本，自测可用, 网口配置和白色版不一样，4根天线都是ipex可拆，ttl排针焊接好了，做工比白色版好些)
+- G-AX1800-B (from https://github.com/vb1980/padavan-4.4, 富春江G-AX1800黑色版本, 自测可用, 网口配置和白色版不一样, 4根天线都是ipex可拆, ttl排针焊接好了, 做工比白色版好些)
 - GHL (from https://github.com/fangenhui520/padavan-4.4, 没有机器测试，自行判断)
 - HAR-20S2U1 (from https://github.com/vb1980/padavan-4.4, 没有机器测试，自行判断)
 - JDCloud RE-CP-02 (无线宝鲁班, from https://github.com/240038901/padavan-4.4, 没有机器测试，自行判断)
@@ -77,7 +77,7 @@ This project is based on original rt-n56u with latest mtk 4.4.198 kernel, which 
 - NETGEAR-R6800 (from https://github.com/MNM28/padavan-4.4, 没有机器测试，自行判断)
 - NETGEAR-R7450 (from https://github.com/vipshmily/padavan-4.4, 自测可用)
 - NEWIFI
-- NEWIFI3 (partially from https://github.com/GH-X/padavan-4.4, 无需拆除C48电容，没有机器测试，自行判断)
+- NEWIFI3 (partially from https://github.com/GH-X/padavan-4.4, 无需拆除C48电容, 没有机器测试，自行判断)
 - QM-B1 (from https://github.com/monw/padavan, 没有机器测试，自行判断)
 - R2100
 - RM2100
@@ -87,18 +87,18 @@ This project is based on original rt-n56u with latest mtk 4.4.198 kernel, which 
 - WDR8620 (from https://github.com/fzn0268/padavan-4.4, 没有机器测试，自行判断)
 - WRL18M4GD (from https://github.com/vb1980/padavan-4.4, 没有机器测试，自行判断)
 - WE410443-TC (from https://github.com/akw28888/padavan-4.4, 没有机器测试，自行判断)
-- WIA3300-10 (from https://github.com/vb1980/padavan-4.4, 西加云杉WIA3300-10，自测可用)
+- WIA3300-10 (from https://github.com/vb1980/padavan-4.4, 西加云杉WIA3300-10, 自测可用)
 - WR1200JS
 - XY-C1
 - ZTE-E8820S
 - ZTE-E8820V2
-- ZTT-RX6000(from https://github.com/vb1980/padavan-4.4，中天科技RX6000的Wifi6运营商机器，ttl刷机简单，使用R3G分区，r3g breed刷入，自测可用)
+- ZTT-RX6000(from https://github.com/vb1980/padavan-4.4, 中天科技RX6000的Wifi6运营商机器, ttl刷机简单, 使用R3G分区, r3g breed刷入, 自测可用)
 # Compilation steps
 
 - Install dependencies
   ```sh
   # Debian/Ubuntu
-  sudo apt install unzip libtool-bin ccache curl cmake gperf gawk flex bison nano xxd \
+  sudo apt install ccache unzip libtool-bin ccache curl cmake gperf gawk flex bison nano xxd \
       fakeroot kmod cpio bc zip git python3-docutils gettext automake autopoint \
       texinfo build-essential help2man pkg-config zlib1g-dev libgmp3-dev \
       libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev wget libc-dev-bin liblzma-dev

@@ -1,13 +1,13 @@
 include $(ROOTDIR)/rules.mk
 
 PKG_NAME:=dropbear
-PKG_VERSION:=2024.86
+PKG_VERSION:=2025.87
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.bz2
 PKG_SOURCE_URL:= \
 	https://matt.ucc.asn.au/dropbear/releases/ \
 	https://dropbear.nl/mirror/releases/
-PKG_HASH:=e78936dffc395f2e0db099321d6be659190966b99712b55c530dd0a1822e0a5e
+PKG_HASH:=738b7f358547f0c64c3e1a56bbc5ef98d34d9ec6adf9ccdf01dc0bf2caa2bc8d
 
 PKG_FIXUP:=autoreconf
 
